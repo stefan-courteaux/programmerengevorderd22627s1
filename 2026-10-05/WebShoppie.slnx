@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Api/">
+    <Project Path="WebShoppie.Api.Contracts/WebShoppie.Api.Contracts.csproj" />
+    <Project Path="WebShoppie.Api\WebShoppie.Api.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="WebShoppie.Domain.Services/WebShoppie.Domain.Services.csproj" />
+  </Folder>
+  <Folder Name="/Persistence/" />
+</Solution>
