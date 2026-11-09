@@ -1,0 +1,13 @@
+dotnet ef dbcontext scaffold \
+"Server=localhost;Port=5432;Userid=admin;Password=secret;Database=pg2db" \
+Npgsql.EntityFrameworkCore.PostgreSQL
+
+dotnet ef dbcontext scaffold \
+"Server=localhost;Port=5432;Userid=admin;Password=secret;Database=pg2db" \
+Npgsql.EntityFrameworkCore.PostgreSQL \
+--context WebShoppieDbContext \
+--output-dir Entities \
+--context-dir ./ \
+--force
+
+  Microsoft.NET.Sdk.DefaultItems.Shared.targets(190, 5): [NETSDK1022] Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. For more information, see https://aka.ms/sdkimplicititems. The duplicate items were: 'Interfaces/ICustomerRepository.cs'; 'Interfaces/IOrderRepository.cs'; 'Interfaces/IProductRepository.cs'

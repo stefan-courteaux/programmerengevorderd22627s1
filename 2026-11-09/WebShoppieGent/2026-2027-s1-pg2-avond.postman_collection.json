@@ -1,0 +1,340 @@
+{
+  "info": {
+    "_postman_id": "5ed1beb4-8a55-4432-9360-36b35e3d6877",
+    "name": "2026-2027-s1-pg2-avond",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33190066"
+  },
+  "item": [
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "Create Customer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Email\" : \"bla22@hogent.be\",\n    \"Country\" : \"BE\",\n    \"LastName\" : \"Permentier\",\n    \"FirstName\" : \"Jefke 2\",\n    \"DateOfBirth\" : \"1995-06-07\",\n    \"Addressline1\" : \"Dorpstraat 1\",\n    \"Addressline2\" : \"8000 Gemeente\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5054/customers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Customer",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Email\" : \"bla2-updated2@hogent.be\",\n    \"Country\" : \"BE\",\n    \"LastName\" : \"UPDATED EF CORE\",\n    \"FirstName\" : \"Jefke Updated\",\n    \"DateOfBirth\" : \"1995-06-07\",\n    \"Addressline1\" : \"Dorpstraat 1\",\n    \"Addressline2\" : \"8000 Gemeente\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5054/customers/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "customers",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Customer",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/customers/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "customers",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Customer",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/customers/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "customers",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Customers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/customers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Wireless Keyboard\",\n  \"description\": \"Ergonomic wireless keyboard\",\n  \"price\": 49.99,\n  \"stockCount\": 100\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5054/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Wireless Keyboard\",\n  \"description\": \"Ergonomic wireless keyboard - Updated 2\",\n  \"price\": 49.99,\n  \"stockCount\": 100\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5054/products/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "products",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/products/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "products",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/products/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "products",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerId\": 6,\n  \"orderProducts\": [\n    {\n      \"productId\": 1,\n      \"quantity\": 7\n    },\n    {\n      \"productId\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5054/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5054/orders/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5054",
+              "path": [
+                "orders",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hello World",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5108",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ForeCast",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5054/superweatherforecasts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5054",
+          "path": [
+            "superweatherforecasts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
